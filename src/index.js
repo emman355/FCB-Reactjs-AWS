@@ -16,13 +16,16 @@ const TaskList = () => {
     ];
 
     return (
-        <ul>
-            {taskItemList.map((task, index) => {
-                 
-                return <Task key={index} taskName={task} />
-            }
-            )}
-        </ul>
+        <>
+            <input type="text" className="task-input"/>
+            <ul>
+                {taskItemList.map((task, index) => {
+                    
+                    return <Task key={index} taskName={task} />
+                }
+                )}
+            </ul>
+        </>
     )
     
 }
